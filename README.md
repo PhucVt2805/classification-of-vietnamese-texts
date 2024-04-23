@@ -1,7 +1,4 @@
-# Welcome to streamlit
-
-This is the app you get when you run `streamlit hello`, extracted as its own app.
-
-Edit [Hello.py](./Hello.py) to customize this app to your heart's desire. ❤️
-
-Check it out on [Streamlit Community Cloud](https://st-hello-app.streamlit.app/)
+<h1>Welcome to the Text Topic Classification project </h1>
+<p>Automatic text topic classification is an important field in natural language processing (NLP), a branch of artificial intelligence (AI) that studies how computers understand and interact with human language. People. As the amount of text data information increases rapidly on the Internet and digital information systems, automatically analyzing and classifying topics of text segments becomes essential. Machine learning algorithms are designed to detect context and meaning from text, helping to classify its topic accurately.</p>
+<p>Automatic text topic classification brings many practical benefits. In the news industry, this system can automatically sort articles into appropriate categories, helping users easily find information. In the field of education and research, it helps organize and manage large amounts of academic documents effectively. Businesses can use this technology to analyze emotions and themes in customer feedback, thereby better understanding customer attitudes and issues of concern. Thereby, they can improve products and services to better meet market needs.</p>
+<p>By applying AI technology and deep learning models, automatic text topic classification not only improves information management efficiency but also opens up new opportunities for the development of businesses and organizations.</p>
