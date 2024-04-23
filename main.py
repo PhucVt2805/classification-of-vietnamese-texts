@@ -9,8 +9,11 @@ def remove_stop_words(sentence, stop_words_file):
         stop_words = file.read().split('\n')
     return ' '.join(word for word in sentence.split() if word not in stop_words)
 
-def unconvert(category_dict, value):
-    return category_dict.get(value, "Không xác định")
+def unconvert(dict, value):
+    for k, v in dict.items():
+        if value == v:
+            return k
+    return "Không xác định"
 
 def run():
     model, tfidf_vectorizer, category_dict = joblib.load('Model/model.joblib')
@@ -25,7 +28,7 @@ def run():
         processed_sentence = remove_number(sentence.lower())
         processed_sentence = remove_stop_words(processed_sentence, 'Data/vietnamese_stop_words.txt')
         vectorized_sentence = tfidf_vectorizer.transform([processed_sentence])
-        category = model.predict(vectorized_sentence)[0]  # Lấy chỉ số đầu tiên vì predict trả về một mảng
+        category = model.predict(vectorized_sentence)[0]
         category_name = unconvert(category_dict, category)
         st.title(f'Với tiêu đề trên, thể loại của văn bản sẽ thuộc: {category_name}')
 
